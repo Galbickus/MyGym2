@@ -32,14 +32,20 @@
             this.MenuVertical = new System.Windows.Forms.Panel();
             this.picbMarca = new System.Windows.Forms.PictureBox();
             this.pnlTitulo = new System.Windows.Forms.Panel();
+            this.picbCerrar = new System.Windows.Forms.PictureBox();
             this.btnSlide = new System.Windows.Forms.PictureBox();
             this.pnlContenedor = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picbMaximizar = new System.Windows.Forms.PictureBox();
+            this.picbRestaurar = new System.Windows.Forms.PictureBox();
+            this.picbMinimizar = new System.Windows.Forms.PictureBox();
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbMarca)).BeginInit();
             this.pnlTitulo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picbCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbMaximizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbRestaurar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbMinimizar)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuVertical
@@ -65,13 +71,30 @@
             // pnlTitulo
             // 
             this.pnlTitulo.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pnlTitulo.Controls.Add(this.pictureBox1);
+            this.pnlTitulo.Controls.Add(this.picbMinimizar);
+            this.pnlTitulo.Controls.Add(this.picbRestaurar);
+            this.pnlTitulo.Controls.Add(this.picbMaximizar);
+            this.pnlTitulo.Controls.Add(this.picbCerrar);
             this.pnlTitulo.Controls.Add(this.btnSlide);
             this.pnlTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTitulo.Location = new System.Drawing.Point(250, 0);
             this.pnlTitulo.Name = "pnlTitulo";
             this.pnlTitulo.Size = new System.Drawing.Size(1050, 50);
             this.pnlTitulo.TabIndex = 1;
+            this.pnlTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlTitulo_MouseDown);
+            // 
+            // picbCerrar
+            // 
+            this.picbCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picbCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picbCerrar.Image = ((System.Drawing.Image)(resources.GetObject("picbCerrar.Image")));
+            this.picbCerrar.Location = new System.Drawing.Point(1001, 12);
+            this.picbCerrar.Name = "picbCerrar";
+            this.picbCerrar.Size = new System.Drawing.Size(20, 20);
+            this.picbCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picbCerrar.TabIndex = 1;
+            this.picbCerrar.TabStop = false;
+            this.picbCerrar.Click += new System.EventHandler(this.picbCerrar_Click);
             // 
             // btnSlide
             // 
@@ -94,13 +117,43 @@
             this.pnlContenedor.Size = new System.Drawing.Size(1050, 600);
             this.pnlContenedor.TabIndex = 2;
             // 
-            // pictureBox1
+            // picbMaximizar
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(928, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.picbMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picbMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("picbMaximizar.Image")));
+            this.picbMaximizar.Location = new System.Drawing.Point(975, 12);
+            this.picbMaximizar.Name = "picbMaximizar";
+            this.picbMaximizar.Size = new System.Drawing.Size(20, 20);
+            this.picbMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picbMaximizar.TabIndex = 2;
+            this.picbMaximizar.TabStop = false;
+            this.picbMaximizar.Click += new System.EventHandler(this.picbMaximizar_Click);
+            // 
+            // picbRestaurar
+            // 
+            this.picbRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picbRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picbRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("picbRestaurar.Image")));
+            this.picbRestaurar.Location = new System.Drawing.Point(975, 12);
+            this.picbRestaurar.Name = "picbRestaurar";
+            this.picbRestaurar.Size = new System.Drawing.Size(20, 20);
+            this.picbRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picbRestaurar.TabIndex = 3;
+            this.picbRestaurar.TabStop = false;
+            this.picbRestaurar.Click += new System.EventHandler(this.picbRestaurar_Click);
+            // 
+            // picbMinimizar
+            // 
+            this.picbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picbMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picbMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("picbMinimizar.Image")));
+            this.picbMinimizar.Location = new System.Drawing.Point(949, 12);
+            this.picbMinimizar.Name = "picbMinimizar";
+            this.picbMinimizar.Size = new System.Drawing.Size(20, 20);
+            this.picbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picbMinimizar.TabIndex = 4;
+            this.picbMinimizar.TabStop = false;
+            this.picbMinimizar.Click += new System.EventHandler(this.picbMinimizar_Click);
             // 
             // FrmPpal
             // 
@@ -116,8 +169,11 @@
             this.MenuVertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picbMarca)).EndInit();
             this.pnlTitulo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picbCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbMaximizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbRestaurar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbMinimizar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -129,7 +185,10 @@
         private System.Windows.Forms.Panel pnlContenedor;
         private System.Windows.Forms.PictureBox btnSlide;
         private System.Windows.Forms.PictureBox picbMarca;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picbCerrar;
+        private System.Windows.Forms.PictureBox picbMinimizar;
+        private System.Windows.Forms.PictureBox picbRestaurar;
+        private System.Windows.Forms.PictureBox picbMaximizar;
     }
 }
 
