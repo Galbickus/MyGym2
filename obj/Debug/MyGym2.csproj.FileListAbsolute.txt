@@ -1,0 +1,10 @@
+C:\Users\ASUS\source\repos\MyGym2\bin\Debug\MyGym2.exe.config
+C:\Users\ASUS\source\repos\MyGym2\bin\Debug\MyGym2.exe
+C:\Users\ASUS\source\repos\MyGym2\bin\Debug\MyGym2.pdb
+C:\Users\ASUS\source\repos\MyGym2\obj\Debug\MyGym2.csproj.AssemblyReference.cache
+C:\Users\ASUS\source\repos\MyGym2\obj\Debug\MyGym2.FrmPpal.resources
+C:\Users\ASUS\source\repos\MyGym2\obj\Debug\MyGym2.Properties.Resources.resources
+C:\Users\ASUS\source\repos\MyGym2\obj\Debug\MyGym2.csproj.GenerateResource.cache
+C:\Users\ASUS\source\repos\MyGym2\obj\Debug\MyGym2.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\MyGym2\obj\Debug\MyGym2.exe
+C:\Users\ASUS\source\repos\MyGym2\obj\Debug\MyGym2.pdb
