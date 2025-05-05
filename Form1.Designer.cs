@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPpal));
             this.MenuVertical = new System.Windows.Forms.Panel();
-            this.pnlTitulo = new System.Windows.Forms.Panel();
-            this.pnlContenedor = new System.Windows.Forms.Panel();
-            this.btnSlide = new System.Windows.Forms.PictureBox();
             this.picbMarca = new System.Windows.Forms.PictureBox();
+            this.pnlTitulo = new System.Windows.Forms.Panel();
+            this.btnSlide = new System.Windows.Forms.PictureBox();
+            this.pnlContenedor = new System.Windows.Forms.Panel();
             this.MenuVertical.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picbMarca)).BeginInit();
             this.pnlTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbMarca)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuVertical
@@ -50,6 +50,16 @@
             this.MenuVertical.Size = new System.Drawing.Size(250, 650);
             this.MenuVertical.TabIndex = 0;
             // 
+            // picbMarca
+            // 
+            this.picbMarca.Image = ((System.Drawing.Image)(resources.GetObject("picbMarca.Image")));
+            this.picbMarca.Location = new System.Drawing.Point(0, 3);
+            this.picbMarca.Name = "picbMarca";
+            this.picbMarca.Size = new System.Drawing.Size(250, 47);
+            this.picbMarca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picbMarca.TabIndex = 0;
+            this.picbMarca.TabStop = false;
+            // 
             // pnlTitulo
             // 
             this.pnlTitulo.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -59,15 +69,6 @@
             this.pnlTitulo.Name = "pnlTitulo";
             this.pnlTitulo.Size = new System.Drawing.Size(1050, 50);
             this.pnlTitulo.TabIndex = 1;
-            // 
-            // pnlContenedor
-            // 
-            this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContenedor.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlContenedor.Location = new System.Drawing.Point(250, 50);
-            this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(1050, 600);
-            this.pnlContenedor.TabIndex = 2;
             // 
             // btnSlide
             // 
@@ -80,15 +81,14 @@
             this.btnSlide.TabStop = false;
             this.btnSlide.Click += new System.EventHandler(this.btnSlide_Click);
             // 
-            // picbMarca
+            // pnlContenedor
             // 
-            this.picbMarca.Image = ((System.Drawing.Image)(resources.GetObject("picbMarca.Image")));
-            this.picbMarca.Location = new System.Drawing.Point(0, 3);
-            this.picbMarca.Name = "picbMarca";
-            this.picbMarca.Size = new System.Drawing.Size(250, 47);
-            this.picbMarca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picbMarca.TabIndex = 0;
-            this.picbMarca.TabStop = false;
+            this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContenedor.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlContenedor.Location = new System.Drawing.Point(250, 50);
+            this.pnlContenedor.Name = "pnlContenedor";
+            this.pnlContenedor.Size = new System.Drawing.Size(1050, 600);
+            this.pnlContenedor.TabIndex = 2;
             // 
             // FrmPpal
             // 
@@ -102,9 +102,9 @@
             this.Name = "FrmPpal";
             this.Text = "Equipo 10";
             this.MenuVertical.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picbMarca)).EndInit();
             this.pnlTitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbMarca)).EndInit();
             this.ResumeLayout(false);
 
         }
