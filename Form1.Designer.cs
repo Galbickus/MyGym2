@@ -32,25 +32,37 @@
             this.MenuVertical = new System.Windows.Forms.Panel();
             this.picbMarca = new System.Windows.Forms.PictureBox();
             this.pnlTitulo = new System.Windows.Forms.Panel();
+            this.picbMinimizar = new System.Windows.Forms.PictureBox();
+            this.picbRestaurar = new System.Windows.Forms.PictureBox();
+            this.picbMaximizar = new System.Windows.Forms.PictureBox();
             this.picbCerrar = new System.Windows.Forms.PictureBox();
             this.btnSlide = new System.Windows.Forms.PictureBox();
             this.pnlContenedor = new System.Windows.Forms.Panel();
-            this.picbMaximizar = new System.Windows.Forms.PictureBox();
-            this.picbRestaurar = new System.Windows.Forms.PictureBox();
-            this.picbMinimizar = new System.Windows.Forms.PictureBox();
+            this.btnInscribirSocio = new System.Windows.Forms.Button();
+            this.btnIncribirVisitantes = new System.Windows.Forms.Button();
+            this.btnEmitirCarnet = new System.Windows.Forms.Button();
+            this.btnInscribirActividad = new System.Windows.Forms.Button();
+            this.btnPagarCuota = new System.Windows.Forms.Button();
+            this.btnListarSocios = new System.Windows.Forms.Button();
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbMarca)).BeginInit();
             this.pnlTitulo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picbMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbRestaurar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbMaximizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbRestaurar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbMinimizar)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.MenuVertical.Controls.Add(this.btnListarSocios);
+            this.MenuVertical.Controls.Add(this.btnPagarCuota);
+            this.MenuVertical.Controls.Add(this.btnInscribirActividad);
+            this.MenuVertical.Controls.Add(this.btnEmitirCarnet);
+            this.MenuVertical.Controls.Add(this.btnIncribirVisitantes);
+            this.MenuVertical.Controls.Add(this.btnInscribirSocio);
             this.MenuVertical.Controls.Add(this.picbMarca);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuVertical.Location = new System.Drawing.Point(0, 0);
@@ -83,6 +95,45 @@
             this.pnlTitulo.TabIndex = 1;
             this.pnlTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlTitulo_MouseDown);
             // 
+            // picbMinimizar
+            // 
+            this.picbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picbMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picbMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("picbMinimizar.Image")));
+            this.picbMinimizar.Location = new System.Drawing.Point(949, 12);
+            this.picbMinimizar.Name = "picbMinimizar";
+            this.picbMinimizar.Size = new System.Drawing.Size(20, 20);
+            this.picbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picbMinimizar.TabIndex = 4;
+            this.picbMinimizar.TabStop = false;
+            this.picbMinimizar.Click += new System.EventHandler(this.picbMinimizar_Click);
+            // 
+            // picbRestaurar
+            // 
+            this.picbRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picbRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picbRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("picbRestaurar.Image")));
+            this.picbRestaurar.Location = new System.Drawing.Point(975, 12);
+            this.picbRestaurar.Name = "picbRestaurar";
+            this.picbRestaurar.Size = new System.Drawing.Size(20, 20);
+            this.picbRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picbRestaurar.TabIndex = 3;
+            this.picbRestaurar.TabStop = false;
+            this.picbRestaurar.Click += new System.EventHandler(this.picbRestaurar_Click);
+            // 
+            // picbMaximizar
+            // 
+            this.picbMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picbMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picbMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("picbMaximizar.Image")));
+            this.picbMaximizar.Location = new System.Drawing.Point(975, 12);
+            this.picbMaximizar.Name = "picbMaximizar";
+            this.picbMaximizar.Size = new System.Drawing.Size(20, 20);
+            this.picbMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picbMaximizar.TabIndex = 2;
+            this.picbMaximizar.TabStop = false;
+            this.picbMaximizar.Click += new System.EventHandler(this.picbMaximizar_Click);
+            // 
             // picbCerrar
             // 
             this.picbCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -110,6 +161,7 @@
             // 
             // pnlContenedor
             // 
+            this.pnlContenedor.BackColor = System.Drawing.SystemColors.Control;
             this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContenedor.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlContenedor.Location = new System.Drawing.Point(250, 50);
@@ -117,43 +169,108 @@
             this.pnlContenedor.Size = new System.Drawing.Size(1050, 600);
             this.pnlContenedor.TabIndex = 2;
             // 
-            // picbMaximizar
+            // btnInscribirSocio
             // 
-            this.picbMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picbMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("picbMaximizar.Image")));
-            this.picbMaximizar.Location = new System.Drawing.Point(975, 12);
-            this.picbMaximizar.Name = "picbMaximizar";
-            this.picbMaximizar.Size = new System.Drawing.Size(20, 20);
-            this.picbMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picbMaximizar.TabIndex = 2;
-            this.picbMaximizar.TabStop = false;
-            this.picbMaximizar.Click += new System.EventHandler(this.picbMaximizar_Click);
+            this.btnInscribirSocio.FlatAppearance.BorderSize = 0;
+            this.btnInscribirSocio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnInscribirSocio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInscribirSocio.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInscribirSocio.ForeColor = System.Drawing.Color.White;
+            this.btnInscribirSocio.Image = ((System.Drawing.Image)(resources.GetObject("btnInscribirSocio.Image")));
+            this.btnInscribirSocio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInscribirSocio.Location = new System.Drawing.Point(0, 102);
+            this.btnInscribirSocio.Name = "btnInscribirSocio";
+            this.btnInscribirSocio.Size = new System.Drawing.Size(250, 40);
+            this.btnInscribirSocio.TabIndex = 1;
+            this.btnInscribirSocio.Text = "Inscribir socio";
+            this.btnInscribirSocio.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnInscribirSocio.UseVisualStyleBackColor = true;
+            this.btnInscribirSocio.Click += new System.EventHandler(this.btnInscribirSocio_Click);
             // 
-            // picbRestaurar
+            // btnIncribirVisitantes
             // 
-            this.picbRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picbRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picbRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("picbRestaurar.Image")));
-            this.picbRestaurar.Location = new System.Drawing.Point(975, 12);
-            this.picbRestaurar.Name = "picbRestaurar";
-            this.picbRestaurar.Size = new System.Drawing.Size(20, 20);
-            this.picbRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picbRestaurar.TabIndex = 3;
-            this.picbRestaurar.TabStop = false;
-            this.picbRestaurar.Click += new System.EventHandler(this.picbRestaurar_Click);
+            this.btnIncribirVisitantes.FlatAppearance.BorderSize = 0;
+            this.btnIncribirVisitantes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnIncribirVisitantes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIncribirVisitantes.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIncribirVisitantes.ForeColor = System.Drawing.Color.White;
+            this.btnIncribirVisitantes.Image = ((System.Drawing.Image)(resources.GetObject("btnIncribirVisitantes.Image")));
+            this.btnIncribirVisitantes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnIncribirVisitantes.Location = new System.Drawing.Point(0, 160);
+            this.btnIncribirVisitantes.Name = "btnIncribirVisitantes";
+            this.btnIncribirVisitantes.Size = new System.Drawing.Size(250, 40);
+            this.btnIncribirVisitantes.TabIndex = 2;
+            this.btnIncribirVisitantes.Text = "Inscribir visitantes";
+            this.btnIncribirVisitantes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnIncribirVisitantes.UseVisualStyleBackColor = true;
             // 
-            // picbMinimizar
+            // btnEmitirCarnet
             // 
-            this.picbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picbMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picbMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("picbMinimizar.Image")));
-            this.picbMinimizar.Location = new System.Drawing.Point(949, 12);
-            this.picbMinimizar.Name = "picbMinimizar";
-            this.picbMinimizar.Size = new System.Drawing.Size(20, 20);
-            this.picbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picbMinimizar.TabIndex = 4;
-            this.picbMinimizar.TabStop = false;
-            this.picbMinimizar.Click += new System.EventHandler(this.picbMinimizar_Click);
+            this.btnEmitirCarnet.FlatAppearance.BorderSize = 0;
+            this.btnEmitirCarnet.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnEmitirCarnet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEmitirCarnet.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmitirCarnet.ForeColor = System.Drawing.Color.White;
+            this.btnEmitirCarnet.Image = ((System.Drawing.Image)(resources.GetObject("btnEmitirCarnet.Image")));
+            this.btnEmitirCarnet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEmitirCarnet.Location = new System.Drawing.Point(0, 222);
+            this.btnEmitirCarnet.Name = "btnEmitirCarnet";
+            this.btnEmitirCarnet.Size = new System.Drawing.Size(250, 40);
+            this.btnEmitirCarnet.TabIndex = 3;
+            this.btnEmitirCarnet.Text = "Emitir carnet";
+            this.btnEmitirCarnet.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEmitirCarnet.UseVisualStyleBackColor = true;
+            // 
+            // btnInscribirActividad
+            // 
+            this.btnInscribirActividad.FlatAppearance.BorderSize = 0;
+            this.btnInscribirActividad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnInscribirActividad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInscribirActividad.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInscribirActividad.ForeColor = System.Drawing.Color.White;
+            this.btnInscribirActividad.Image = ((System.Drawing.Image)(resources.GetObject("btnInscribirActividad.Image")));
+            this.btnInscribirActividad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInscribirActividad.Location = new System.Drawing.Point(0, 279);
+            this.btnInscribirActividad.Name = "btnInscribirActividad";
+            this.btnInscribirActividad.Size = new System.Drawing.Size(250, 40);
+            this.btnInscribirActividad.TabIndex = 4;
+            this.btnInscribirActividad.Text = "Inscribir actividad";
+            this.btnInscribirActividad.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnInscribirActividad.UseVisualStyleBackColor = true;
+            // 
+            // btnPagarCuota
+            // 
+            this.btnPagarCuota.FlatAppearance.BorderSize = 0;
+            this.btnPagarCuota.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnPagarCuota.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPagarCuota.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPagarCuota.ForeColor = System.Drawing.Color.White;
+            this.btnPagarCuota.Image = ((System.Drawing.Image)(resources.GetObject("btnPagarCuota.Image")));
+            this.btnPagarCuota.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPagarCuota.Location = new System.Drawing.Point(0, 336);
+            this.btnPagarCuota.Name = "btnPagarCuota";
+            this.btnPagarCuota.Size = new System.Drawing.Size(250, 40);
+            this.btnPagarCuota.TabIndex = 5;
+            this.btnPagarCuota.Text = "Pagar cuota";
+            this.btnPagarCuota.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPagarCuota.UseVisualStyleBackColor = true;
+            // 
+            // btnListarSocios
+            // 
+            this.btnListarSocios.FlatAppearance.BorderSize = 0;
+            this.btnListarSocios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnListarSocios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListarSocios.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListarSocios.ForeColor = System.Drawing.Color.White;
+            this.btnListarSocios.Image = ((System.Drawing.Image)(resources.GetObject("btnListarSocios.Image")));
+            this.btnListarSocios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnListarSocios.Location = new System.Drawing.Point(0, 395);
+            this.btnListarSocios.Name = "btnListarSocios";
+            this.btnListarSocios.Size = new System.Drawing.Size(250, 40);
+            this.btnListarSocios.TabIndex = 6;
+            this.btnListarSocios.Text = "Listar socios";
+            this.btnListarSocios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnListarSocios.UseVisualStyleBackColor = true;
             // 
             // FrmPpal
             // 
@@ -169,11 +286,11 @@
             this.MenuVertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picbMarca)).EndInit();
             this.pnlTitulo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picbMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbRestaurar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbMaximizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbRestaurar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbMinimizar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -189,6 +306,12 @@
         private System.Windows.Forms.PictureBox picbMinimizar;
         private System.Windows.Forms.PictureBox picbRestaurar;
         private System.Windows.Forms.PictureBox picbMaximizar;
+        private System.Windows.Forms.Button btnInscribirSocio;
+        private System.Windows.Forms.Button btnIncribirVisitantes;
+        private System.Windows.Forms.Button btnEmitirCarnet;
+        private System.Windows.Forms.Button btnInscribirActividad;
+        private System.Windows.Forms.Button btnListarSocios;
+        private System.Windows.Forms.Button btnPagarCuota;
     }
 }
 

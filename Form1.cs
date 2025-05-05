@@ -29,7 +29,8 @@ namespace MyGym2
         {
             if (MenuVertical.Width == 250)
             {
-                MenuVertical.Width = 50;
+                MenuVertical.Width = 56
+                    ;
             }
             else
             {
@@ -65,6 +66,24 @@ namespace MyGym2
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+
+        }
+
+        private void AbrirFormEnPanel(object Formhijo)
+        {
+            if (this.pnlContenedor.Controls.Count > 0)
+                this.pnlContenedor.Controls.RemoveAt(0);
+            Form fh = Formhijo as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.pnlContenedor.Controls.Add(fh);
+            this.pnlContenedor.Tag = fh;
+            fh.Show();
+        }
+
+        private void btnInscribirSocio_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new Socios());
 
         }
     }
