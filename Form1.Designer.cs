@@ -34,10 +34,12 @@
             this.pnlTitulo = new System.Windows.Forms.Panel();
             this.btnSlide = new System.Windows.Forms.PictureBox();
             this.pnlContenedor = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbMarca)).BeginInit();
             this.pnlTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuVertical
@@ -55,7 +57,7 @@
             this.picbMarca.Image = ((System.Drawing.Image)(resources.GetObject("picbMarca.Image")));
             this.picbMarca.Location = new System.Drawing.Point(0, 3);
             this.picbMarca.Name = "picbMarca";
-            this.picbMarca.Size = new System.Drawing.Size(250, 47);
+            this.picbMarca.Size = new System.Drawing.Size(250, 50);
             this.picbMarca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picbMarca.TabIndex = 0;
             this.picbMarca.TabStop = false;
@@ -63,6 +65,7 @@
             // pnlTitulo
             // 
             this.pnlTitulo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlTitulo.Controls.Add(this.pictureBox1);
             this.pnlTitulo.Controls.Add(this.btnSlide);
             this.pnlTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTitulo.Location = new System.Drawing.Point(250, 0);
@@ -72,6 +75,7 @@
             // 
             // btnSlide
             // 
+            this.btnSlide.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSlide.Image = ((System.Drawing.Image)(resources.GetObject("btnSlide.Image")));
             this.btnSlide.Location = new System.Drawing.Point(6, 9);
             this.btnSlide.Name = "btnSlide";
@@ -90,6 +94,14 @@
             this.pnlContenedor.Size = new System.Drawing.Size(1050, 600);
             this.pnlContenedor.TabIndex = 2;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(928, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmPpal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -105,6 +117,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picbMarca)).EndInit();
             this.pnlTitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -116,6 +129,7 @@
         private System.Windows.Forms.Panel pnlContenedor;
         private System.Windows.Forms.PictureBox btnSlide;
         private System.Windows.Forms.PictureBox picbMarca;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
