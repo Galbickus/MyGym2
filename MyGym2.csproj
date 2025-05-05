@@ -47,8 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="entidades\Actividad.cs" />
+    <Compile Include="entidades\Cuota.cs" />
     <Compile Include="entidades\Persona.cs" />
     <Compile Include="entidades\Socio.cs" />
+    <Compile Include="entidades\Usuario.cs" />
     <Compile Include="entidades\Visitante.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
