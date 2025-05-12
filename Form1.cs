@@ -81,10 +81,17 @@ namespace MyGym2
             fh.Show();
         }
 
-        private void btnInscribirSocio_Click(object sender, EventArgs e)
+        private void BtnInscribirSocio_Click(object sender, EventArgs e)
         {
             AbrirFormEnPanel(new Socios());
 
         }
+
+        private void horafecha_Tick(object sender, EventArgs e)
+        {
+            lblHora.Text = DateTime.Now.ToString("HH:mm");
+            lblFecha.Text = DateTime.Now.ToLongDateString();
+        }
     }
 }
+

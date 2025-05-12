@@ -98,7 +98,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Datos\Conexion.cs" />
+    <Compile Include="datos\Conexion.cs" />
     <Compile Include="entidades\Actividad.cs" />
     <Compile Include="entidades\Cuota.cs" />
     <Compile Include="entidades\Persona.cs" />

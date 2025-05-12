@@ -28,8 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPpal));
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.lblHora = new System.Windows.Forms.Label();
+            this.btnListarSocios = new System.Windows.Forms.Button();
+            this.btnPagarCuota = new System.Windows.Forms.Button();
+            this.btnInscribirActividad = new System.Windows.Forms.Button();
+            this.btnEmitirCarnet = new System.Windows.Forms.Button();
+            this.btnIncribirVisitantes = new System.Windows.Forms.Button();
+            this.btnInscribirSocio = new System.Windows.Forms.Button();
             this.picbMarca = new System.Windows.Forms.PictureBox();
             this.pnlTitulo = new System.Windows.Forms.Panel();
             this.picbMinimizar = new System.Windows.Forms.PictureBox();
@@ -38,12 +46,8 @@
             this.picbCerrar = new System.Windows.Forms.PictureBox();
             this.btnSlide = new System.Windows.Forms.PictureBox();
             this.pnlContenedor = new System.Windows.Forms.Panel();
-            this.btnInscribirSocio = new System.Windows.Forms.Button();
-            this.btnIncribirVisitantes = new System.Windows.Forms.Button();
-            this.btnEmitirCarnet = new System.Windows.Forms.Button();
-            this.btnInscribirActividad = new System.Windows.Forms.Button();
-            this.btnPagarCuota = new System.Windows.Forms.Button();
-            this.btnListarSocios = new System.Windows.Forms.Button();
+            this.horafecha = new System.Windows.Forms.Timer(this.components);
+            this.lblFecha = new System.Windows.Forms.Label();
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbMarca)).BeginInit();
             this.pnlTitulo.SuspendLayout();
@@ -57,6 +61,8 @@
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.MenuVertical.Controls.Add(this.lblFecha);
+            this.MenuVertical.Controls.Add(this.lblHora);
             this.MenuVertical.Controls.Add(this.btnListarSocios);
             this.MenuVertical.Controls.Add(this.btnPagarCuota);
             this.MenuVertical.Controls.Add(this.btnInscribirActividad);
@@ -69,6 +75,123 @@
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(250, 650);
             this.MenuVertical.TabIndex = 0;
+            // 
+            // lblHora
+            // 
+            this.lblHora.AutoSize = true;
+            this.lblHora.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHora.Location = new System.Drawing.Point(3, 548);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(63, 24);
+            this.lblHora.TabIndex = 7;
+            this.lblHora.Text = "HORA";
+            this.lblHora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnListarSocios
+            // 
+            this.btnListarSocios.FlatAppearance.BorderSize = 0;
+            this.btnListarSocios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnListarSocios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListarSocios.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListarSocios.ForeColor = System.Drawing.Color.White;
+            this.btnListarSocios.Image = ((System.Drawing.Image)(resources.GetObject("btnListarSocios.Image")));
+            this.btnListarSocios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnListarSocios.Location = new System.Drawing.Point(0, 395);
+            this.btnListarSocios.Name = "btnListarSocios";
+            this.btnListarSocios.Size = new System.Drawing.Size(250, 40);
+            this.btnListarSocios.TabIndex = 6;
+            this.btnListarSocios.Text = "Listar socios";
+            this.btnListarSocios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnListarSocios.UseVisualStyleBackColor = true;
+            // 
+            // btnPagarCuota
+            // 
+            this.btnPagarCuota.FlatAppearance.BorderSize = 0;
+            this.btnPagarCuota.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnPagarCuota.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPagarCuota.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPagarCuota.ForeColor = System.Drawing.Color.White;
+            this.btnPagarCuota.Image = ((System.Drawing.Image)(resources.GetObject("btnPagarCuota.Image")));
+            this.btnPagarCuota.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPagarCuota.Location = new System.Drawing.Point(0, 336);
+            this.btnPagarCuota.Name = "btnPagarCuota";
+            this.btnPagarCuota.Size = new System.Drawing.Size(250, 40);
+            this.btnPagarCuota.TabIndex = 5;
+            this.btnPagarCuota.Text = "Pagar cuota";
+            this.btnPagarCuota.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPagarCuota.UseVisualStyleBackColor = true;
+            // 
+            // btnInscribirActividad
+            // 
+            this.btnInscribirActividad.FlatAppearance.BorderSize = 0;
+            this.btnInscribirActividad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnInscribirActividad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInscribirActividad.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInscribirActividad.ForeColor = System.Drawing.Color.White;
+            this.btnInscribirActividad.Image = ((System.Drawing.Image)(resources.GetObject("btnInscribirActividad.Image")));
+            this.btnInscribirActividad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInscribirActividad.Location = new System.Drawing.Point(0, 279);
+            this.btnInscribirActividad.Name = "btnInscribirActividad";
+            this.btnInscribirActividad.Size = new System.Drawing.Size(250, 40);
+            this.btnInscribirActividad.TabIndex = 4;
+            this.btnInscribirActividad.Text = "Inscribir actividad";
+            this.btnInscribirActividad.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnInscribirActividad.UseVisualStyleBackColor = true;
+            // 
+            // btnEmitirCarnet
+            // 
+            this.btnEmitirCarnet.FlatAppearance.BorderSize = 0;
+            this.btnEmitirCarnet.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnEmitirCarnet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEmitirCarnet.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmitirCarnet.ForeColor = System.Drawing.Color.White;
+            this.btnEmitirCarnet.Image = ((System.Drawing.Image)(resources.GetObject("btnEmitirCarnet.Image")));
+            this.btnEmitirCarnet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEmitirCarnet.Location = new System.Drawing.Point(0, 222);
+            this.btnEmitirCarnet.Name = "btnEmitirCarnet";
+            this.btnEmitirCarnet.Size = new System.Drawing.Size(250, 40);
+            this.btnEmitirCarnet.TabIndex = 3;
+            this.btnEmitirCarnet.Text = "Emitir carnet";
+            this.btnEmitirCarnet.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEmitirCarnet.UseVisualStyleBackColor = true;
+            // 
+            // btnIncribirVisitantes
+            // 
+            this.btnIncribirVisitantes.FlatAppearance.BorderSize = 0;
+            this.btnIncribirVisitantes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnIncribirVisitantes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIncribirVisitantes.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIncribirVisitantes.ForeColor = System.Drawing.Color.White;
+            this.btnIncribirVisitantes.Image = ((System.Drawing.Image)(resources.GetObject("btnIncribirVisitantes.Image")));
+            this.btnIncribirVisitantes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnIncribirVisitantes.Location = new System.Drawing.Point(0, 160);
+            this.btnIncribirVisitantes.Name = "btnIncribirVisitantes";
+            this.btnIncribirVisitantes.Size = new System.Drawing.Size(250, 40);
+            this.btnIncribirVisitantes.TabIndex = 2;
+            this.btnIncribirVisitantes.Text = "Inscribir visitantes";
+            this.btnIncribirVisitantes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnIncribirVisitantes.UseVisualStyleBackColor = true;
+            // 
+            // btnInscribirSocio
+            // 
+            this.btnInscribirSocio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnInscribirSocio.FlatAppearance.BorderSize = 0;
+            this.btnInscribirSocio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnInscribirSocio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnInscribirSocio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInscribirSocio.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInscribirSocio.ForeColor = System.Drawing.Color.White;
+            this.btnInscribirSocio.Image = ((System.Drawing.Image)(resources.GetObject("btnInscribirSocio.Image")));
+            this.btnInscribirSocio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInscribirSocio.Location = new System.Drawing.Point(0, 102);
+            this.btnInscribirSocio.Name = "btnInscribirSocio";
+            this.btnInscribirSocio.Size = new System.Drawing.Size(250, 40);
+            this.btnInscribirSocio.TabIndex = 1;
+            this.btnInscribirSocio.Text = "Inscribir socio";
+            this.btnInscribirSocio.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnInscribirSocio.UseVisualStyleBackColor = false;
+            this.btnInscribirSocio.Click += new System.EventHandler(this.BtnInscribirSocio_Click);
             // 
             // picbMarca
             // 
@@ -169,108 +292,22 @@
             this.pnlContenedor.Size = new System.Drawing.Size(1050, 600);
             this.pnlContenedor.TabIndex = 2;
             // 
-            // btnInscribirSocio
+            // horafecha
             // 
-            this.btnInscribirSocio.FlatAppearance.BorderSize = 0;
-            this.btnInscribirSocio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnInscribirSocio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInscribirSocio.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInscribirSocio.ForeColor = System.Drawing.Color.White;
-            this.btnInscribirSocio.Image = ((System.Drawing.Image)(resources.GetObject("btnInscribirSocio.Image")));
-            this.btnInscribirSocio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInscribirSocio.Location = new System.Drawing.Point(0, 102);
-            this.btnInscribirSocio.Name = "btnInscribirSocio";
-            this.btnInscribirSocio.Size = new System.Drawing.Size(250, 40);
-            this.btnInscribirSocio.TabIndex = 1;
-            this.btnInscribirSocio.Text = "Inscribir socio";
-            this.btnInscribirSocio.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnInscribirSocio.UseVisualStyleBackColor = true;
-            this.btnInscribirSocio.Click += new System.EventHandler(this.btnInscribirSocio_Click);
+            this.horafecha.Enabled = true;
+            this.horafecha.Tick += new System.EventHandler(this.horafecha_Tick);
             // 
-            // btnIncribirVisitantes
+            // lblFecha
             // 
-            this.btnIncribirVisitantes.FlatAppearance.BorderSize = 0;
-            this.btnIncribirVisitantes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnIncribirVisitantes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIncribirVisitantes.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIncribirVisitantes.ForeColor = System.Drawing.Color.White;
-            this.btnIncribirVisitantes.Image = ((System.Drawing.Image)(resources.GetObject("btnIncribirVisitantes.Image")));
-            this.btnIncribirVisitantes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIncribirVisitantes.Location = new System.Drawing.Point(0, 160);
-            this.btnIncribirVisitantes.Name = "btnIncribirVisitantes";
-            this.btnIncribirVisitantes.Size = new System.Drawing.Size(250, 40);
-            this.btnIncribirVisitantes.TabIndex = 2;
-            this.btnIncribirVisitantes.Text = "Inscribir visitantes";
-            this.btnIncribirVisitantes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnIncribirVisitantes.UseVisualStyleBackColor = true;
-            // 
-            // btnEmitirCarnet
-            // 
-            this.btnEmitirCarnet.FlatAppearance.BorderSize = 0;
-            this.btnEmitirCarnet.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnEmitirCarnet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEmitirCarnet.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmitirCarnet.ForeColor = System.Drawing.Color.White;
-            this.btnEmitirCarnet.Image = ((System.Drawing.Image)(resources.GetObject("btnEmitirCarnet.Image")));
-            this.btnEmitirCarnet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmitirCarnet.Location = new System.Drawing.Point(0, 222);
-            this.btnEmitirCarnet.Name = "btnEmitirCarnet";
-            this.btnEmitirCarnet.Size = new System.Drawing.Size(250, 40);
-            this.btnEmitirCarnet.TabIndex = 3;
-            this.btnEmitirCarnet.Text = "Emitir carnet";
-            this.btnEmitirCarnet.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEmitirCarnet.UseVisualStyleBackColor = true;
-            // 
-            // btnInscribirActividad
-            // 
-            this.btnInscribirActividad.FlatAppearance.BorderSize = 0;
-            this.btnInscribirActividad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnInscribirActividad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInscribirActividad.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInscribirActividad.ForeColor = System.Drawing.Color.White;
-            this.btnInscribirActividad.Image = ((System.Drawing.Image)(resources.GetObject("btnInscribirActividad.Image")));
-            this.btnInscribirActividad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInscribirActividad.Location = new System.Drawing.Point(0, 279);
-            this.btnInscribirActividad.Name = "btnInscribirActividad";
-            this.btnInscribirActividad.Size = new System.Drawing.Size(250, 40);
-            this.btnInscribirActividad.TabIndex = 4;
-            this.btnInscribirActividad.Text = "Inscribir actividad";
-            this.btnInscribirActividad.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnInscribirActividad.UseVisualStyleBackColor = true;
-            // 
-            // btnPagarCuota
-            // 
-            this.btnPagarCuota.FlatAppearance.BorderSize = 0;
-            this.btnPagarCuota.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnPagarCuota.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPagarCuota.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPagarCuota.ForeColor = System.Drawing.Color.White;
-            this.btnPagarCuota.Image = ((System.Drawing.Image)(resources.GetObject("btnPagarCuota.Image")));
-            this.btnPagarCuota.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPagarCuota.Location = new System.Drawing.Point(0, 336);
-            this.btnPagarCuota.Name = "btnPagarCuota";
-            this.btnPagarCuota.Size = new System.Drawing.Size(250, 40);
-            this.btnPagarCuota.TabIndex = 5;
-            this.btnPagarCuota.Text = "Pagar cuota";
-            this.btnPagarCuota.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPagarCuota.UseVisualStyleBackColor = true;
-            // 
-            // btnListarSocios
-            // 
-            this.btnListarSocios.FlatAppearance.BorderSize = 0;
-            this.btnListarSocios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnListarSocios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListarSocios.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListarSocios.ForeColor = System.Drawing.Color.White;
-            this.btnListarSocios.Image = ((System.Drawing.Image)(resources.GetObject("btnListarSocios.Image")));
-            this.btnListarSocios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnListarSocios.Location = new System.Drawing.Point(0, 395);
-            this.btnListarSocios.Name = "btnListarSocios";
-            this.btnListarSocios.Size = new System.Drawing.Size(250, 40);
-            this.btnListarSocios.TabIndex = 6;
-            this.btnListarSocios.Text = "Listar socios";
-            this.btnListarSocios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnListarSocios.UseVisualStyleBackColor = true;
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblFecha.Location = new System.Drawing.Point(72, 548);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(58, 22);
+            this.lblFecha.TabIndex = 8;
+            this.lblFecha.Text = "HORA";
+            this.lblFecha.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FrmPpal
             // 
@@ -281,9 +318,12 @@
             this.Controls.Add(this.pnlTitulo);
             this.Controls.Add(this.MenuVertical);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPpal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Equipo 10";
             this.MenuVertical.ResumeLayout(false);
+            this.MenuVertical.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbMarca)).EndInit();
             this.pnlTitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picbMinimizar)).EndInit();
@@ -312,6 +352,9 @@
         private System.Windows.Forms.Button btnInscribirActividad;
         private System.Windows.Forms.Button btnListarSocios;
         private System.Windows.Forms.Button btnPagarCuota;
+        private System.Windows.Forms.Label lblHora;
+        private System.Windows.Forms.Timer horafecha;
+        private System.Windows.Forms.Label lblFecha;
     }
 }
 

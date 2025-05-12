@@ -54,7 +54,7 @@
             this.btnGuardarSocio.ForeColor = System.Drawing.Color.White;
             this.btnGuardarSocio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardarSocio.Location = new System.Drawing.Point(260, 402);
-            this.btnGuardarSocio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuardarSocio.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardarSocio.Name = "btnGuardarSocio";
             this.btnGuardarSocio.Size = new System.Drawing.Size(344, 60);
             this.btnGuardarSocio.TabIndex = 2;
@@ -67,7 +67,7 @@
             this.lblX.AutoSize = true;
             this.lblX.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblX.Location = new System.Drawing.Point(871, 28);
+            this.lblX.Location = new System.Drawing.Point(936, 28);
             this.lblX.Name = "lblX";
             this.lblX.Size = new System.Drawing.Size(23, 24);
             this.lblX.TabIndex = 3;
@@ -79,13 +79,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(985, 692);
+            this.ClientSize = new System.Drawing.Size(1050, 600);
             this.Controls.Add(this.lblX);
             this.Controls.Add(this.btnGuardarSocio);
             this.Controls.Add(this.lblSocios);
             this.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Socios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Socios";
