@@ -42,3 +42,5 @@ C:\Users\ASUS\source\repos\MyGym2\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\ASUS\source\repos\MyGym2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\ASUS\source\repos\MyGym2\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\ASUS\source\repos\MyGym2\obj\Debug\MyGym2.csproj.Up2Date
+C:\Users\ASUS\source\repos\MyGym2\obj\Debug\MyGym2.vistas.FrmIntro.resources
+C:\Users\ASUS\source\repos\MyGym2\obj\Debug\MyGym2.vistas.LoginForm.resources

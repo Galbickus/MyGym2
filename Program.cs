@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyGym2.vistas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,8 @@ namespace MyGym2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmPpal());
+            /*Application.Run(new FrmPpal());*/
+            Application.Run(new FrmIntro());
         }
     }
 }
