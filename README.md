@@ -36,6 +36,10 @@
 ### Etapa 2: Persistencia Semana 7/8 - Agrega Base de Datos MySql
 
 <p align="center">
+  <img src="https://github.com/user-attachments/assets/47128e4f-8bce-4195-803e-7b9bc492788d" alt="Captura login" width="70%" />
+</p>
+
+<p align="center">
   <img src="https://github.com/user-attachments/assets/21c767ce-aa63-412c-bdb9-16ed85b28746" alt="Captura etapa 2" width="70%" />
 </p>
 
@@ -64,6 +68,7 @@ git clone https://github.com/Galbickus/MyGym2
 
 ```
 ---
+
 
 
 Comentarios y contribuciones
