@@ -99,6 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="datos\Conexion.cs" />
+    <Compile Include="datos\UsuarioDao.cs" />
     <Compile Include="entidades\Actividad.cs" />
     <Compile Include="entidades\Cuota.cs" />
     <Compile Include="entidades\Persona.cs" />

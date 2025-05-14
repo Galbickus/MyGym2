@@ -17,7 +17,6 @@ namespace MyGym2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            /*Application.Run(new FrmPpal());*/
             Application.Run(new FrmIntro());
         }
     }

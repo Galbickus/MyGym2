@@ -27,5 +27,22 @@ namespace MyGym2.vistas
             /*txtpassword.UseSystemPasswordChar = !chkMostrarContra.Checked;*/
             txtpassword.PasswordChar = chkMostrarContra.Checked ? '\0' : '*';
         }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            DataTable tablaLogin = new DataTable(); // es la que recibe los datos desde el formulario
+            datos.UsuarioDao dato = new datos.UsuarioDao(); // variable que contiene todas las caracteristicas de la clase
+            tablaLogin = dato.Log_Usu(txtUsuario.Text, txtpassword.Text);
+            if (tablaLogin.Rows.Count > 0)
+            {
+                // quiere decir que el resultado tiene 1 fila por lo que el usuario EXISTE
+                MessageBox.Show("Ingreso exitoso");
+            }
+            else
+            {
+                MessageBox.Show("Usuario y/o password incorrecto");
+            }
+
+        }
     }
 }

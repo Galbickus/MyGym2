@@ -17,10 +17,10 @@ namespace MyGym2.Datos
         // Constructor privado
         private Conexion()
         {
-            this.baseDatos = "mygym";
-            this.servidor = "localhost";
-            this.puerto = "3306";
-            this.usuario = "root";
+            this.baseDatos = "";
+            this.servidor = "";    //COMPLETAR Y NO SUBIR A REPOOOOOO
+            this.puerto = "";
+            this.usuario = "";
             this.clave = "";
         }
 
