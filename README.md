@@ -21,7 +21,7 @@
 ## Tecnologías utilizadas
 
 - Lenguaje: C#
-- Base de Datos: My SQL
+- Base de Datos: MySQL
 
 ---
 
