@@ -40,8 +40,9 @@
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/21c767ce-aa63-412c-bdb9-16ed85b28746" alt="Captura etapa 2" width="70%" />
+  <img src="https://github.com/user-attachments/assets/cba40943-3ec1-4292-80c4-fc5d219be8da" alt="Captura etapa 2" width="70%" />
 </p>
+
 
 * Login de administradores. Interfaz visual.
 * Implementación de persistencia de datos usando MySQL para almacenar usuarios y credenciales de administrador.
