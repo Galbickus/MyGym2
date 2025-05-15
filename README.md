@@ -43,6 +43,9 @@
   <img src="https://github.com/user-attachments/assets/cba40943-3ec1-4292-80c4-fc5d219be8da" alt="Captura etapa 2" width="70%" />
 </p>
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/21a7269b-c9ad-41f0-96ec-bd9380e048c6" alt="Vista Inscripción Socio" width="70%" />
+</p>
 
 * Login de administradores. Interfaz visual.
 * Implementación de persistencia de datos usando MySQL para almacenar usuarios y credenciales de administrador.
