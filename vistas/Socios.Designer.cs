@@ -83,7 +83,7 @@
             this.lblX.AutoSize = true;
             this.lblX.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblX.Location = new System.Drawing.Point(699, 16);
+            this.lblX.Location = new System.Drawing.Point(715, 16);
             this.lblX.Name = "lblX";
             this.lblX.Size = new System.Drawing.Size(23, 24);
             this.lblX.TabIndex = 3;
@@ -257,7 +257,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(387, 82);
+            this.label1.Location = new System.Drawing.Point(381, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 20);
             this.label1.TabIndex = 15;

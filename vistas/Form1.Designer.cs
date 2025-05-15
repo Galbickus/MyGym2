@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPpal));
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.btnLogOut = new System.Windows.Forms.Button();
             this.lblFecha = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
             this.btnListarSocios = new System.Windows.Forms.Button();
@@ -39,7 +40,6 @@
             this.btnEmitirCarnet = new System.Windows.Forms.Button();
             this.btnIncribirVisitantes = new System.Windows.Forms.Button();
             this.btnInscribirSocio = new System.Windows.Forms.Button();
-            this.picbMarca = new System.Windows.Forms.PictureBox();
             this.pnlTitulo = new System.Windows.Forms.Panel();
             this.picbMinimizar = new System.Windows.Forms.PictureBox();
             this.picbRestaurar = new System.Windows.Forms.PictureBox();
@@ -48,9 +48,7 @@
             this.btnSlide = new System.Windows.Forms.PictureBox();
             this.pnlContenedor = new System.Windows.Forms.Panel();
             this.horafecha = new System.Windows.Forms.Timer(this.components);
-            this.btnLogOut = new System.Windows.Forms.Button();
             this.MenuVertical.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picbMarca)).BeginInit();
             this.pnlTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbRestaurar)).BeginInit();
@@ -71,19 +69,37 @@
             this.MenuVertical.Controls.Add(this.btnEmitirCarnet);
             this.MenuVertical.Controls.Add(this.btnIncribirVisitantes);
             this.MenuVertical.Controls.Add(this.btnInscribirSocio);
-            this.MenuVertical.Controls.Add(this.picbMarca);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuVertical.Location = new System.Drawing.Point(0, 0);
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(250, 650);
             this.MenuVertical.TabIndex = 0;
             // 
+            // btnLogOut
+            // 
+            this.btnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogOut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(105)))));
+            this.btnLogOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(105)))));
+            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogOut.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOut.ForeColor = System.Drawing.Color.White;
+            this.btnLogOut.Image = global::MyGym2.Properties.Resources.logout_441;
+            this.btnLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogOut.Location = new System.Drawing.Point(12, 560);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(232, 60);
+            this.btnLogOut.TabIndex = 9;
+            this.btnLogOut.Text = "Cerrar Sesión";
+            this.btnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
+            // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblFecha.Location = new System.Drawing.Point(-3, 483);
+            this.lblFecha.Location = new System.Drawing.Point(12, 462);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(40, 15);
             this.lblFecha.TabIndex = 8;
@@ -93,11 +109,11 @@
             // lblHora
             // 
             this.lblHora.AutoSize = true;
-            this.lblHora.Font = new System.Drawing.Font("Roboto", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.Font = new System.Drawing.Font("Roboto", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblHora.Location = new System.Drawing.Point(-6, 511);
+            this.lblHora.Location = new System.Drawing.Point(57, 498);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(89, 34);
+            this.lblHora.Size = new System.Drawing.Size(117, 44);
             this.lblHora.TabIndex = 7;
             this.lblHora.Text = "HORA";
             this.lblHora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -212,16 +228,6 @@
             this.btnInscribirSocio.UseVisualStyleBackColor = false;
             this.btnInscribirSocio.Click += new System.EventHandler(this.BtnInscribirSocio_Click);
             // 
-            // picbMarca
-            // 
-            this.picbMarca.Image = ((System.Drawing.Image)(resources.GetObject("picbMarca.Image")));
-            this.picbMarca.Location = new System.Drawing.Point(0, 3);
-            this.picbMarca.Name = "picbMarca";
-            this.picbMarca.Size = new System.Drawing.Size(250, 50);
-            this.picbMarca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picbMarca.TabIndex = 0;
-            this.picbMarca.TabStop = false;
-            // 
             // pnlTitulo
             // 
             this.pnlTitulo.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -304,7 +310,6 @@
             // pnlContenedor
             // 
             this.pnlContenedor.BackColor = System.Drawing.SystemColors.Control;
-            this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContenedor.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlContenedor.Location = new System.Drawing.Point(250, 50);
             this.pnlContenedor.Name = "pnlContenedor";
@@ -315,25 +320,6 @@
             // 
             this.horafecha.Enabled = true;
             this.horafecha.Tick += new System.EventHandler(this.horafecha_Tick);
-            // 
-            // btnLogOut
-            // 
-            this.btnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogOut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(105)))));
-            this.btnLogOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(105)))));
-            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogOut.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogOut.ForeColor = System.Drawing.Color.White;
-            this.btnLogOut.Image = global::MyGym2.Properties.Resources.logout_441;
-            this.btnLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogOut.Location = new System.Drawing.Point(3, 578);
-            this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(241, 60);
-            this.btnLogOut.TabIndex = 9;
-            this.btnLogOut.Text = "Cerrar Sesión";
-            this.btnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLogOut.UseVisualStyleBackColor = true;
-            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // FrmPpal
             // 
@@ -350,7 +336,6 @@
             this.Text = "Equipo 10";
             this.MenuVertical.ResumeLayout(false);
             this.MenuVertical.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picbMarca)).EndInit();
             this.pnlTitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picbMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbRestaurar)).EndInit();
@@ -367,7 +352,6 @@
         private System.Windows.Forms.Panel pnlTitulo;
         private System.Windows.Forms.Panel pnlContenedor;
         private System.Windows.Forms.PictureBox btnSlide;
-        private System.Windows.Forms.PictureBox picbMarca;
         private System.Windows.Forms.PictureBox picbCerrar;
         private System.Windows.Forms.PictureBox picbMinimizar;
         private System.Windows.Forms.PictureBox picbRestaurar;

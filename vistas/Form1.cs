@@ -26,19 +26,21 @@ namespace MyGym2
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
 
         /// 
+        
         private void btnSlide_Click(object sender, EventArgs e)
         {
             if (MenuVertical.Width == 250)
             {
-                MenuVertical.Width = 56             //ver 56
-                    ;
+                MenuVertical.Width = 56;  //ver 56
             }
             else
             {
                 MenuVertical.Width = 250;
+
+
             }
         }
-
+        
         private void picbCerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -105,7 +107,30 @@ namespace MyGym2
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
+            DialogResult check = MessageBox.Show("¿Estás seguro de Cerrar Sesión?", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (check == DialogResult.Yes)
+            {
+                LoginForm lForm = new LoginForm();
+                lForm.Show();
+                this.Hide();
+            }
         }
+
+        /*
+        private void LoginUsuario(string username, string password)
+        {
+            // Aquí, implementas la lógica de acceso a la base de datos
+            // Por ejemplo, supongamos que tienes una función GetUserCategory que obtiene la categoría del usuario
+            string categoria = GetUserCategory(username, password);  // Esto es solo un ejemplo
+
+            // Supongamos que el nombre del usuario también se obtiene desde la base de datos
+            string nombreUsuario = GetUserName(username);  // Esto es solo un ejemplo
+
+            // Mostrar en el Label
+            lblMuestraUsuario.Text = $"Usuario: {nombreUsuario} | Categoría: {categoria}";
+        }
+        */
     }
 }
 
