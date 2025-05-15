@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -30,7 +31,31 @@ namespace MyGym2.vistas
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            DataTable tablaLogin = new DataTable(); // es la que recibe los datos desde el formulario
+
+
+            datos.UsuarioDao dato = new datos.UsuarioDao();
+            DataTable tablaLogin = dato.Log_Usu(txtUsuario.Text, txtpassword.Text);
+
+            if (tablaLogin.Rows.Count > 0)
+            {
+                // Usuario válido
+                MessageBox.Show("Ingreso exitoso", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                this.Hide(); // Ocultamos el formulario de login
+
+                FrmPpal principal = new FrmPpal(); // Instanciamos el formulario principal
+                principal.FormClosed += (s, args) => Application.Exit(); // Cuando se cierre Form1, cierra la app
+                principal.Show(); // Mostramos Form1
+            }
+            else
+            {
+                MessageBox.Show("Usuario y/o password incorrecto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+
+
+            /*DataTable tablaLogin = new DataTable(); // es la que recibe los datos desde el formulario
             datos.UsuarioDao dato = new datos.UsuarioDao(); // variable que contiene todas las caracteristicas de la clase
             tablaLogin = dato.Log_Usu(txtUsuario.Text, txtpassword.Text);
             if (tablaLogin.Rows.Count > 0)
@@ -41,7 +66,7 @@ namespace MyGym2.vistas
             else
             {
                 MessageBox.Show("Usuario y/o password incorrecto");
-            }
+            }*/
 
         }
     }

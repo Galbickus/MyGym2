@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using MyGym2.vistas;
 
 namespace MyGym2
 {
@@ -29,7 +30,7 @@ namespace MyGym2
         {
             if (MenuVertical.Width == 250)
             {
-                MenuVertical.Width = 56
+                MenuVertical.Width = 56             //ver 56
                     ;
             }
             else
@@ -87,10 +88,23 @@ namespace MyGym2
 
         }
 
-        private void horafecha_Tick(object sender, EventArgs e)
+        /*private void horafecha_Tick(object sender, EventArgs e)
         {
             lblHora.Text = DateTime.Now.ToString("HH:mm");
             lblFecha.Text = DateTime.Now.ToLongDateString();
+        }*/
+
+        private void horafecha_Tick(object sender, EventArgs e)
+        {
+            lblHora.Text = DateTime.Now.ToString("HH:mm");
+
+            // Capitaliza la primera letra de la fecha
+            string fecha = DateTime.Now.ToLongDateString();
+            lblFecha.Text = char.ToUpper(fecha[0]) + fecha.Substring(1);
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
         }
     }
 }

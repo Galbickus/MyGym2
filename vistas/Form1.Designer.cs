@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPpal));
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.lblFecha = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
             this.btnListarSocios = new System.Windows.Forms.Button();
             this.btnPagarCuota = new System.Windows.Forms.Button();
@@ -47,7 +48,7 @@
             this.btnSlide = new System.Windows.Forms.PictureBox();
             this.pnlContenedor = new System.Windows.Forms.Panel();
             this.horafecha = new System.Windows.Forms.Timer(this.components);
-            this.lblFecha = new System.Windows.Forms.Label();
+            this.btnLogOut = new System.Windows.Forms.Button();
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbMarca)).BeginInit();
             this.pnlTitulo.SuspendLayout();
@@ -61,6 +62,7 @@
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.MenuVertical.Controls.Add(this.btnLogOut);
             this.MenuVertical.Controls.Add(this.lblFecha);
             this.MenuVertical.Controls.Add(this.lblHora);
             this.MenuVertical.Controls.Add(this.btnListarSocios);
@@ -76,14 +78,26 @@
             this.MenuVertical.Size = new System.Drawing.Size(250, 650);
             this.MenuVertical.TabIndex = 0;
             // 
+            // lblFecha
+            // 
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblFecha.Location = new System.Drawing.Point(-3, 483);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(40, 15);
+            this.lblFecha.TabIndex = 8;
+            this.lblFecha.Text = "fecha";
+            this.lblFecha.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // lblHora
             // 
             this.lblHora.AutoSize = true;
-            this.lblHora.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.Font = new System.Drawing.Font("Roboto", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblHora.Location = new System.Drawing.Point(3, 548);
+            this.lblHora.Location = new System.Drawing.Point(-6, 511);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(63, 24);
+            this.lblHora.Size = new System.Drawing.Size(89, 34);
             this.lblHora.TabIndex = 7;
             this.lblHora.Text = "HORA";
             this.lblHora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -91,7 +105,8 @@
             // btnListarSocios
             // 
             this.btnListarSocios.FlatAppearance.BorderSize = 0;
-            this.btnListarSocios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnListarSocios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(105)))));
+            this.btnListarSocios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(105)))));
             this.btnListarSocios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnListarSocios.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListarSocios.ForeColor = System.Drawing.Color.White;
@@ -108,7 +123,8 @@
             // btnPagarCuota
             // 
             this.btnPagarCuota.FlatAppearance.BorderSize = 0;
-            this.btnPagarCuota.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnPagarCuota.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(105)))));
+            this.btnPagarCuota.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(105)))));
             this.btnPagarCuota.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPagarCuota.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPagarCuota.ForeColor = System.Drawing.Color.White;
@@ -125,7 +141,8 @@
             // btnInscribirActividad
             // 
             this.btnInscribirActividad.FlatAppearance.BorderSize = 0;
-            this.btnInscribirActividad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnInscribirActividad.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(105)))));
+            this.btnInscribirActividad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(105)))));
             this.btnInscribirActividad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInscribirActividad.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInscribirActividad.ForeColor = System.Drawing.Color.White;
@@ -142,7 +159,8 @@
             // btnEmitirCarnet
             // 
             this.btnEmitirCarnet.FlatAppearance.BorderSize = 0;
-            this.btnEmitirCarnet.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnEmitirCarnet.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(105)))));
+            this.btnEmitirCarnet.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(105)))));
             this.btnEmitirCarnet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmitirCarnet.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmitirCarnet.ForeColor = System.Drawing.Color.White;
@@ -159,7 +177,8 @@
             // btnIncribirVisitantes
             // 
             this.btnIncribirVisitantes.FlatAppearance.BorderSize = 0;
-            this.btnIncribirVisitantes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnIncribirVisitantes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(105)))));
+            this.btnIncribirVisitantes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(105)))));
             this.btnIncribirVisitantes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIncribirVisitantes.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIncribirVisitantes.ForeColor = System.Drawing.Color.White;
@@ -177,8 +196,8 @@
             // 
             this.btnInscribirSocio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.btnInscribirSocio.FlatAppearance.BorderSize = 0;
-            this.btnInscribirSocio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnInscribirSocio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnInscribirSocio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(105)))));
+            this.btnInscribirSocio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(105)))));
             this.btnInscribirSocio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInscribirSocio.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInscribirSocio.ForeColor = System.Drawing.Color.White;
@@ -297,17 +316,24 @@
             this.horafecha.Enabled = true;
             this.horafecha.Tick += new System.EventHandler(this.horafecha_Tick);
             // 
-            // lblFecha
+            // btnLogOut
             // 
-            this.lblFecha.AutoSize = true;
-            this.lblFecha.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblFecha.Location = new System.Drawing.Point(72, 548);
-            this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(58, 22);
-            this.lblFecha.TabIndex = 8;
-            this.lblFecha.Text = "HORA";
-            this.lblFecha.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogOut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(105)))));
+            this.btnLogOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(105)))));
+            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogOut.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOut.ForeColor = System.Drawing.Color.White;
+            this.btnLogOut.Image = global::MyGym2.Properties.Resources.logout_441;
+            this.btnLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogOut.Location = new System.Drawing.Point(3, 578);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(241, 60);
+            this.btnLogOut.TabIndex = 9;
+            this.btnLogOut.Text = "Cerrar Sesión";
+            this.btnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // FrmPpal
             // 
@@ -355,6 +381,7 @@
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Timer horafecha;
         private System.Windows.Forms.Label lblFecha;
+        private System.Windows.Forms.Button btnLogOut;
     }
 }
 
