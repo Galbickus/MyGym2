@@ -17,11 +17,11 @@ namespace MyGym2.Datos
         // Constructor privado
         private Conexion()
         {
-            this.baseDatos = "mygym";
-            this.servidor = "localhost";    //COMPLETAR Y NO SUBIR A REPOOOOOO
-            this.puerto = "3306";
-            this.usuario = "root";
-            this.clave = "BSM223247";
+            this.baseDatos = "";
+            this.servidor = "";    //COMPLETAR Y NO SUBIR A REPOOOOOO
+            this.puerto = "";
+            this.usuario = "";
+            this.clave = "";
         }
 
         // Método para crear y devolver una conexión MySQL
