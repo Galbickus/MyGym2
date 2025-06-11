@@ -32,19 +32,19 @@
             this.btnGuardarSocio = new System.Windows.Forms.Button();
             this.lblX = new System.Windows.Forms.Label();
             this.pnlContenedor = new System.Windows.Forms.Panel();
-            this.txtNombreSocio = new System.Windows.Forms.TextBox();
-            this.txtApellido = new System.Windows.Forms.TextBox();
-            this.txtDNI = new System.Windows.Forms.TextBox();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
-            this.txtDomicilio = new System.Windows.Forms.TextBox();
-            this.txtMail = new System.Windows.Forms.TextBox();
+            this.groupBoxMedico = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dtpVencimientoApto = new System.Windows.Forms.DateTimePicker();
+            this.txtCoberturaMedica = new System.Windows.Forms.TextBox();
+            this.txtContactoEmergencia = new System.Windows.Forms.TextBox();
             this.chkbAptoMedico = new System.Windows.Forms.CheckBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
-            this.txtCoberturaMedica = new System.Windows.Forms.TextBox();
-            this.txtContacto = new System.Windows.Forms.TextBox();
-            this.groupBoxMedico = new System.Windows.Forms.GroupBox();
-            this.dateTimePickerVtoApto = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtMail = new System.Windows.Forms.TextBox();
+            this.txtDomicilio = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.txtDNI = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtNombreSocio = new System.Windows.Forms.TextBox();
             this.pnlContenedor.SuspendLayout();
             this.groupBoxMedico.SuspendLayout();
             this.SuspendLayout();
@@ -76,6 +76,7 @@
             this.btnGuardarSocio.TabIndex = 2;
             this.btnGuardarSocio.Text = "Guardar ";
             this.btnGuardarSocio.UseVisualStyleBackColor = false;
+            this.btnGuardarSocio.Click += new System.EventHandler(this.btnGuardarSocio_Click);
             // 
             // lblX
             // 
@@ -110,71 +111,63 @@
             this.pnlContenedor.Size = new System.Drawing.Size(799, 492);
             this.pnlContenedor.TabIndex = 4;
             // 
-            // txtNombreSocio
+            // groupBoxMedico
             // 
-            this.txtNombreSocio.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreSocio.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txtNombreSocio.Location = new System.Drawing.Point(12, 68);
-            this.txtNombreSocio.Multiline = true;
-            this.txtNombreSocio.Name = "txtNombreSocio";
-            this.txtNombreSocio.Size = new System.Drawing.Size(350, 30);
-            this.txtNombreSocio.TabIndex = 4;
-            this.txtNombreSocio.Text = "Nombre";
+            this.groupBoxMedico.Controls.Add(this.label1);
+            this.groupBoxMedico.Controls.Add(this.dtpVencimientoApto);
+            this.groupBoxMedico.Controls.Add(this.txtCoberturaMedica);
+            this.groupBoxMedico.Controls.Add(this.txtContactoEmergencia);
+            this.groupBoxMedico.Controls.Add(this.chkbAptoMedico);
+            this.groupBoxMedico.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.groupBoxMedico.Location = new System.Drawing.Point(12, 244);
+            this.groupBoxMedico.Name = "groupBoxMedico";
+            this.groupBoxMedico.Size = new System.Drawing.Size(725, 125);
+            this.groupBoxMedico.TabIndex = 14;
+            this.groupBoxMedico.TabStop = false;
+            this.groupBoxMedico.Text = "Información Médica";
             // 
-            // txtApellido
+            // label1
             // 
-            this.txtApellido.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellido.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txtApellido.Location = new System.Drawing.Point(388, 68);
-            this.txtApellido.Multiline = true;
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(350, 30);
-            this.txtApellido.TabIndex = 5;
-            this.txtApellido.Text = "Apellido";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(381, 83);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(104, 20);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Vencimiento";
             // 
-            // txtDNI
+            // dtpVencimientoApto
             // 
-            this.txtDNI.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDNI.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txtDNI.Location = new System.Drawing.Point(12, 122);
-            this.txtDNI.Multiline = true;
-            this.txtDNI.Name = "txtDNI";
-            this.txtDNI.Size = new System.Drawing.Size(350, 30);
-            this.txtDNI.TabIndex = 6;
-            this.txtDNI.Text = "DNI";
+            this.dtpVencimientoApto.CalendarFont = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpVencimientoApto.CalendarForeColor = System.Drawing.SystemColors.GrayText;
+            this.dtpVencimientoApto.CalendarTitleForeColor = System.Drawing.SystemColors.GrayText;
+            this.dtpVencimientoApto.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpVencimientoApto.Location = new System.Drawing.Point(519, 82);
+            this.dtpVencimientoApto.Name = "dtpVencimientoApto";
+            this.dtpVencimientoApto.Size = new System.Drawing.Size(200, 28);
+            this.dtpVencimientoApto.TabIndex = 14;
             // 
-            // txtTelefono
+            // txtCoberturaMedica
             // 
-            this.txtTelefono.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txtTelefono.Location = new System.Drawing.Point(388, 122);
-            this.txtTelefono.Multiline = true;
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(350, 30);
-            this.txtTelefono.TabIndex = 7;
-            this.txtTelefono.Text = "Telefono (sin guiones)";
+            this.txtCoberturaMedica.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCoberturaMedica.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.txtCoberturaMedica.Location = new System.Drawing.Point(6, 31);
+            this.txtCoberturaMedica.Multiline = true;
+            this.txtCoberturaMedica.Name = "txtCoberturaMedica";
+            this.txtCoberturaMedica.Size = new System.Drawing.Size(350, 30);
+            this.txtCoberturaMedica.TabIndex = 12;
+            this.txtCoberturaMedica.Text = "Cobertura";
             // 
-            // txtDomicilio
+            // txtContactoEmergencia
             // 
-            this.txtDomicilio.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDomicilio.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txtDomicilio.Location = new System.Drawing.Point(12, 183);
-            this.txtDomicilio.Multiline = true;
-            this.txtDomicilio.Name = "txtDomicilio";
-            this.txtDomicilio.Size = new System.Drawing.Size(350, 30);
-            this.txtDomicilio.TabIndex = 8;
-            this.txtDomicilio.Text = "Domicilio";
-            // 
-            // txtMail
-            // 
-            this.txtMail.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMail.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txtMail.Location = new System.Drawing.Point(388, 183);
-            this.txtMail.Multiline = true;
-            this.txtMail.Name = "txtMail";
-            this.txtMail.Size = new System.Drawing.Size(350, 30);
-            this.txtMail.TabIndex = 9;
-            this.txtMail.Text = "Mail";
+            this.txtContactoEmergencia.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContactoEmergencia.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.txtContactoEmergencia.Location = new System.Drawing.Point(376, 31);
+            this.txtContactoEmergencia.Multiline = true;
+            this.txtContactoEmergencia.Name = "txtContactoEmergencia";
+            this.txtContactoEmergencia.Size = new System.Drawing.Size(343, 30);
+            this.txtContactoEmergencia.TabIndex = 13;
+            this.txtContactoEmergencia.Text = "Contacto Familiar";
             // 
             // chkbAptoMedico
             // 
@@ -205,63 +198,71 @@
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
             // 
-            // txtCoberturaMedica
+            // txtMail
             // 
-            this.txtCoberturaMedica.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCoberturaMedica.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txtCoberturaMedica.Location = new System.Drawing.Point(6, 31);
-            this.txtCoberturaMedica.Multiline = true;
-            this.txtCoberturaMedica.Name = "txtCoberturaMedica";
-            this.txtCoberturaMedica.Size = new System.Drawing.Size(350, 30);
-            this.txtCoberturaMedica.TabIndex = 12;
-            this.txtCoberturaMedica.Text = "Cobertura";
+            this.txtMail.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMail.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.txtMail.Location = new System.Drawing.Point(388, 183);
+            this.txtMail.Multiline = true;
+            this.txtMail.Name = "txtMail";
+            this.txtMail.Size = new System.Drawing.Size(350, 30);
+            this.txtMail.TabIndex = 9;
+            this.txtMail.Text = "Mail";
             // 
-            // txtContacto
+            // txtDomicilio
             // 
-            this.txtContacto.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContacto.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txtContacto.Location = new System.Drawing.Point(376, 31);
-            this.txtContacto.Multiline = true;
-            this.txtContacto.Name = "txtContacto";
-            this.txtContacto.Size = new System.Drawing.Size(343, 30);
-            this.txtContacto.TabIndex = 13;
-            this.txtContacto.Text = "Contacto Familiar";
+            this.txtDomicilio.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDomicilio.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.txtDomicilio.Location = new System.Drawing.Point(12, 183);
+            this.txtDomicilio.Multiline = true;
+            this.txtDomicilio.Name = "txtDomicilio";
+            this.txtDomicilio.Size = new System.Drawing.Size(350, 30);
+            this.txtDomicilio.TabIndex = 8;
+            this.txtDomicilio.Text = "Domicilio";
             // 
-            // groupBoxMedico
+            // txtTelefono
             // 
-            this.groupBoxMedico.Controls.Add(this.label1);
-            this.groupBoxMedico.Controls.Add(this.dateTimePickerVtoApto);
-            this.groupBoxMedico.Controls.Add(this.txtCoberturaMedica);
-            this.groupBoxMedico.Controls.Add(this.txtContacto);
-            this.groupBoxMedico.Controls.Add(this.chkbAptoMedico);
-            this.groupBoxMedico.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.groupBoxMedico.Location = new System.Drawing.Point(12, 244);
-            this.groupBoxMedico.Name = "groupBoxMedico";
-            this.groupBoxMedico.Size = new System.Drawing.Size(725, 125);
-            this.groupBoxMedico.TabIndex = 14;
-            this.groupBoxMedico.TabStop = false;
-            this.groupBoxMedico.Text = "Información Médica";
+            this.txtTelefono.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefono.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.txtTelefono.Location = new System.Drawing.Point(388, 122);
+            this.txtTelefono.Multiline = true;
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(350, 30);
+            this.txtTelefono.TabIndex = 7;
+            this.txtTelefono.Text = "Telefono (sin guiones)";
             // 
-            // dateTimePickerVtoApto
+            // txtDNI
             // 
-            this.dateTimePickerVtoApto.CalendarFont = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerVtoApto.CalendarForeColor = System.Drawing.SystemColors.GrayText;
-            this.dateTimePickerVtoApto.CalendarTitleForeColor = System.Drawing.SystemColors.GrayText;
-            this.dateTimePickerVtoApto.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerVtoApto.Location = new System.Drawing.Point(519, 82);
-            this.dateTimePickerVtoApto.Name = "dateTimePickerVtoApto";
-            this.dateTimePickerVtoApto.Size = new System.Drawing.Size(200, 28);
-            this.dateTimePickerVtoApto.TabIndex = 14;
+            this.txtDNI.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDNI.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.txtDNI.Location = new System.Drawing.Point(12, 122);
+            this.txtDNI.Multiline = true;
+            this.txtDNI.Name = "txtDNI";
+            this.txtDNI.Size = new System.Drawing.Size(350, 30);
+            this.txtDNI.TabIndex = 6;
+            this.txtDNI.Text = "DNI";
             // 
-            // label1
+            // txtApellido
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(381, 83);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 20);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Vencimiento";
+            this.txtApellido.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellido.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.txtApellido.Location = new System.Drawing.Point(388, 68);
+            this.txtApellido.Multiline = true;
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(350, 30);
+            this.txtApellido.TabIndex = 5;
+            this.txtApellido.Text = "Apellido";
+            // 
+            // txtNombreSocio
+            // 
+            this.txtNombreSocio.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreSocio.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.txtNombreSocio.Location = new System.Drawing.Point(12, 68);
+            this.txtNombreSocio.Multiline = true;
+            this.txtNombreSocio.Name = "txtNombreSocio";
+            this.txtNombreSocio.Size = new System.Drawing.Size(350, 30);
+            this.txtNombreSocio.TabIndex = 4;
+            this.txtNombreSocio.Text = "Nombre";
             // 
             // Socios
             // 
@@ -298,9 +299,9 @@
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.CheckBox chkbAptoMedico;
         private System.Windows.Forms.TextBox txtCoberturaMedica;
-        private System.Windows.Forms.TextBox txtContacto;
+        private System.Windows.Forms.TextBox txtContactoEmergencia;
         private System.Windows.Forms.GroupBox groupBoxMedico;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePickerVtoApto;
+        private System.Windows.Forms.DateTimePicker dtpVencimientoApto;
     }
 }
