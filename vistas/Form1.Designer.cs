@@ -48,6 +48,7 @@
             this.btnSlide = new System.Windows.Forms.PictureBox();
             this.pnlContenedor = new System.Windows.Forms.Panel();
             this.horafecha = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.MenuVertical.SuspendLayout();
             this.pnlTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbMinimizar)).BeginInit();
@@ -55,6 +56,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.picbMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).BeginInit();
+            this.pnlContenedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuVertical
@@ -310,6 +313,7 @@
             // pnlContenedor
             // 
             this.pnlContenedor.BackColor = System.Drawing.SystemColors.Control;
+            this.pnlContenedor.Controls.Add(this.pictureBox1);
             this.pnlContenedor.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlContenedor.Location = new System.Drawing.Point(250, 50);
             this.pnlContenedor.Name = "pnlContenedor";
@@ -320,6 +324,16 @@
             // 
             this.horafecha.Enabled = true;
             this.horafecha.Tick += new System.EventHandler(this.horafecha_Tick);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(411, 172);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(257, 177);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmPpal
             // 
@@ -342,6 +356,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.picbMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).EndInit();
+            this.pnlContenedor.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -366,6 +382,7 @@
         private System.Windows.Forms.Timer horafecha;
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Button btnLogOut;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
