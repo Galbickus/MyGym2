@@ -3,28 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|c:\\users\\asus\\source\\repos\\mygym2\\datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|solutionrelative:datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|c:\\users\\asus\\source\\repos\\mygym2\\entidades\\visitante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|solutionrelative:entidades\\visitante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|C:\\Users\\ASUS\\source\\repos\\MyGym2\\vistas\\socios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|solutionrelative:vistas\\socios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|C:\\Users\\ASUS\\source\\repos\\MyGym2\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|c:\\users\\asus\\source\\repos\\mygym2\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|solutionrelative:entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|C:\\Users\\ASUS\\source\\repos\\MyGym2\\datos\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|solutionrelative:datos\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|c:\\users\\asus\\source\\repos\\mygym2\\vistas\\socios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|solutionrelative:vistas\\socios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|C:\\Users\\ASUS\\source\\repos\\MyGym2\\vistas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|solutionrelative:vistas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|c:\\users\\asus\\source\\repos\\mygym2\\vistas\\socios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|solutionrelative:vistas\\socios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|C:\\Users\\ASUS\\source\\repos\\MyGym2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|c:\\users\\asus\\source\\repos\\mygym2\\vistas\\socios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|solutionrelative:vistas\\socios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|c:\\users\\asus\\source\\repos\\mygym2\\datos\\sociodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|solutionrelative:datos\\sociodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|c:\\users\\asus\\source\\repos\\mygym2\\entidades\\socio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|solutionrelative:entidades\\socio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|c:\\users\\asus\\source\\repos\\mygym2\\entidades\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|solutionrelative:entidades\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|c:\\users\\asus\\source\\repos\\mygym2\\datos\\informacionmedicadatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|solutionrelative:datos\\informacionmedicadatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|c:\\users\\asus\\source\\repos\\mygym2\\entidades\\informacionmedica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|solutionrelative:entidades\\informacionmedica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|c:\\users\\asus\\source\\repos\\mygym2\\vistas\\socios.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|solutionrelative:vistas\\socios.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|c:\\users\\asus\\source\\repos\\mygym2\\datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA6BD99-F712-4E81-9652-84374068CEDA}|MyGym2.csproj|solutionrelative:datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -59,73 +83,156 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Conexion.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\datos\\Conexion.cs",
-              "RelativeDocumentMoniker": "datos\\Conexion.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\datos\\Conexion.cs",
-              "RelativeToolTip": "datos\\Conexion.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAYwBcAAAAlAAAAAAAAAA==",
+              "Title": "Visitante.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\entidades\\Visitante.cs",
+              "RelativeDocumentMoniker": "entidades\\Visitante.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\entidades\\Visitante.cs*",
+              "RelativeToolTip": "entidades\\Visitante.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T15:49:40.337Z",
+              "WhenOpened": "2025-06-12T16:32:19.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\entidades\\Usuario.cs",
+              "RelativeDocumentMoniker": "entidades\\Usuario.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\entidades\\Usuario.cs*",
+              "RelativeToolTip": "entidades\\Usuario.cs*",
+              "ViewState": "AgIAABAAAAAAAAAAAAAywCoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T16:27:23.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Socio.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\entidades\\Socio.cs",
+              "RelativeDocumentMoniker": "entidades\\Socio.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\entidades\\Socio.cs",
+              "RelativeToolTip": "entidades\\Socio.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwB4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T15:51:58.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Persona.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\entidades\\Persona.cs",
+              "RelativeDocumentMoniker": "entidades\\Persona.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\entidades\\Persona.cs",
+              "RelativeToolTip": "entidades\\Persona.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T15:51:48.276Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\entidades\\Usuario.cs",
-              "RelativeDocumentMoniker": "entidades\\Usuario.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\entidades\\Usuario.cs",
-              "RelativeToolTip": "entidades\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Socios.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\vistas\\Socios.cs",
+              "RelativeDocumentMoniker": "vistas\\Socios.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\vistas\\Socios.cs",
+              "RelativeToolTip": "vistas\\Socios.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAIwEEAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T15:42:58.352Z"
+              "WhenOpened": "2025-06-11T18:30:15.325Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "SocioDatos.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\datos\\SocioDatos.cs",
+              "RelativeDocumentMoniker": "datos\\SocioDatos.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\datos\\SocioDatos.cs",
+              "RelativeToolTip": "datos\\SocioDatos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T18:18:26.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InformacionMedica.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\entidades\\InformacionMedica.cs",
+              "RelativeDocumentMoniker": "entidades\\InformacionMedica.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\entidades\\InformacionMedica.cs",
+              "RelativeToolTip": "entidades\\InformacionMedica.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T18:34:40.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Socios.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\vistas\\Socios.Designer.cs",
+              "RelativeDocumentMoniker": "vistas\\Socios.Designer.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\vistas\\Socios.Designer.cs",
+              "RelativeToolTip": "vistas\\Socios.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T17:29:07.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Socios.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\vistas\\Socios.cs",
               "RelativeDocumentMoniker": "vistas\\Socios.cs",
               "ToolTip": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\vistas\\Socios.cs [Dise\u00F1o]",
               "RelativeToolTip": "vistas\\Socios.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T23:12:12.425Z"
+              "WhenOpened": "2025-06-11T17:28:58.767Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UsuarioDao.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\datos\\UsuarioDao.cs",
-              "RelativeDocumentMoniker": "datos\\UsuarioDao.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\datos\\UsuarioDao.cs",
-              "RelativeToolTip": "datos\\UsuarioDao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAQAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "InformacionMedicaDatos.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\datos\\InformacionMedicaDatos.cs",
+              "RelativeDocumentMoniker": "datos\\InformacionMedicaDatos.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\datos\\InformacionMedicaDatos.cs",
+              "RelativeToolTip": "datos\\InformacionMedicaDatos.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T23:09:30.463Z"
+              "WhenOpened": "2025-06-11T18:40:20.16Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\vistas\\Form1.cs",
-              "RelativeDocumentMoniker": "vistas\\Form1.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\vistas\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "vistas\\Form1.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T20:47:28.633Z"
+              "DocumentIndex": 10,
+              "Title": "Socios.resx",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\vistas\\Socios.resx",
+              "RelativeDocumentMoniker": "vistas\\Socios.resx",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\vistas\\Socios.resx",
+              "RelativeToolTip": "vistas\\Socios.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-06-11T20:13:41.724Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAOAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\datos\\Conexion.cs",
+              "RelativeDocumentMoniker": "datos\\Conexion.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\MyGym2\\datos\\Conexion.cs",
+              "RelativeToolTip": "datos\\Conexion.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAgwDsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T00:22:36.106Z"
+              "WhenOpened": "2025-06-11T17:28:09.395Z",
+              "EditorCaption": ""
             }
           ]
         }

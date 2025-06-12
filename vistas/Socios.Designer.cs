@@ -156,7 +156,6 @@
             this.txtCoberturaMedica.Name = "txtCoberturaMedica";
             this.txtCoberturaMedica.Size = new System.Drawing.Size(350, 30);
             this.txtCoberturaMedica.TabIndex = 12;
-            this.txtCoberturaMedica.Text = "Cobertura";
             // 
             // txtContactoEmergencia
             // 
@@ -167,7 +166,6 @@
             this.txtContactoEmergencia.Name = "txtContactoEmergencia";
             this.txtContactoEmergencia.Size = new System.Drawing.Size(343, 30);
             this.txtContactoEmergencia.TabIndex = 13;
-            this.txtContactoEmergencia.Text = "Contacto Familiar";
             // 
             // chkbAptoMedico
             // 
@@ -197,6 +195,7 @@
             this.btnLimpiar.TabIndex = 11;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // txtMail
             // 
@@ -207,7 +206,6 @@
             this.txtMail.Name = "txtMail";
             this.txtMail.Size = new System.Drawing.Size(350, 30);
             this.txtMail.TabIndex = 9;
-            this.txtMail.Text = "Mail";
             // 
             // txtDomicilio
             // 
@@ -218,7 +216,6 @@
             this.txtDomicilio.Name = "txtDomicilio";
             this.txtDomicilio.Size = new System.Drawing.Size(350, 30);
             this.txtDomicilio.TabIndex = 8;
-            this.txtDomicilio.Text = "Domicilio";
             // 
             // txtTelefono
             // 
@@ -229,7 +226,6 @@
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(350, 30);
             this.txtTelefono.TabIndex = 7;
-            this.txtTelefono.Text = "Telefono (sin guiones)";
             // 
             // txtDNI
             // 
@@ -240,7 +236,6 @@
             this.txtDNI.Name = "txtDNI";
             this.txtDNI.Size = new System.Drawing.Size(350, 30);
             this.txtDNI.TabIndex = 6;
-            this.txtDNI.Text = "DNI";
             // 
             // txtApellido
             // 
@@ -251,7 +246,6 @@
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(350, 30);
             this.txtApellido.TabIndex = 5;
-            this.txtApellido.Text = "Apellido";
             // 
             // txtNombreSocio
             // 
@@ -262,7 +256,6 @@
             this.txtNombreSocio.Name = "txtNombreSocio";
             this.txtNombreSocio.Size = new System.Drawing.Size(350, 30);
             this.txtNombreSocio.TabIndex = 4;
-            this.txtNombreSocio.Text = "Nombre";
             // 
             // Socios
             // 
