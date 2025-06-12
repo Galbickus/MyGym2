@@ -64,8 +64,12 @@ namespace MyGym2
                 string telefono = txtTelefono.Text.Trim();
                 bool aptoFisico = chkbAptoMedico.Checked;
                 bool estadoSocio = true;
+                string domicilio = txtDomicilio.Text.Trim();
 
-                Socio socio = new Socio(estadoSocio, aptoFisico, nombre, apellido, dni, email, telefono);
+                Socio socio = new Socio(estadoSocio, aptoFisico, nombre, apellido, dni, email, telefono, domicilio);
+
+
+                /*Socio socio = new Socio(estadoSocio, aptoFisico, nombre, apellido, dni, email, telefono);*/
 
                 // Insertar socio y obtener ID
                 int idSocio = SocioDatos.InsertarSocioYDevolverID(socio);
