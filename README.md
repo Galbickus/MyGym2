@@ -25,13 +25,14 @@
 
 ---
 
-## Etapas del Proyecto
+## VIDEO Demo del Proyecto
 
-### Etapa 1: Estructura básica y prototipo visual
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/4ab97b30-6408-4ede-869e-09ae484b0304" alt="Captura etapa 1" width="70%" />
-</p>
+
+
+https://github.com/user-attachments/assets/ea3002df-eb36-4c1a-aac7-8b08e40777dc
+
+
 
 ### Etapa 2: Persistencia Semana 7/8 - Agrega Base de Datos MySql
 
@@ -46,6 +47,29 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/21a7269b-c9ad-41f0-96ec-bd9380e048c6" alt="Vista Inscripción Socio" width="70%" />
 </p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3c84ce73-5e0b-40a5-9d4b-d23d1ea85571" alt="Carnet para imprimir" width="70%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2ac1a0a0-b7cd-4d74-814b-babc390a96dd" alt="Campo Caja" width="70%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e6ac12e8-3a3d-44d7-a2b0-ffc46fcb9319" alt="Listar socios con cuota vencida" width="70%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/221aecdf-9d5c-4fd0-b52d-1a13fbc51c81" alt="Listar todos los concurrentes" width="70%" />
+</p>
+
+
+
+
+
+
+
 
 * Login de administradores. Interfaz visual.
 * Implementación de persistencia de datos usando MySQL para almacenar usuarios y credenciales de administrador.
